@@ -11,4 +11,14 @@ public class ejemploArrays {
 
         System.out.print(Pares[0]);
     }
+    public static void imprimirArray(String [] array){
+        for(int i=0; i<array.length; i++){
+            System.out.printf("[%d]: %s%n", i, array[i]);
+        }
+    }
+    public static void imprimirArray(int [] array){
+        for(int i=0; i<array.length; i++){
+            System.out.printf("[%d]: %s%n", i, array[i]);
+        }
+    }
 }
