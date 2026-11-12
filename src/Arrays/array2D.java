@@ -16,12 +16,10 @@ public class array2D {
     public static void printArray2DF(float [][] array) {
             for(int i=0; i<array.length; i++) {
                 System.out.printf("[%d]:\t", i);
-                for (int j = 0; j < array[0].length; j++) {
-                    System.out.printf("%f\t", array[i][j]);
-                }
+                for (int j = 0; j < array[0].length; j++) {System.out.printf("%f\t", array[i][j]);}
                 System.out.println();
             }
-        }
+    }
     public static void printArray2DC(float [][] array) {
         for(int j=0; j<array[0].length; j++) {
             System.out.printf("[%d]:\t", j);

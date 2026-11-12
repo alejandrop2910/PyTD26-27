@@ -21,4 +21,8 @@ public class ejemploArrays {
             System.out.printf("[%d]: %s%n", i, array[i]);
         }
     }
+
+    public static void imprimirArray(int[][] suma) {
+
+    }
 }
