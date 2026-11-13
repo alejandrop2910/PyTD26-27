@@ -35,11 +35,11 @@ public class funcionesArrays4 {
         }
         return array;
     }
-    public static boolean comparacionArray2D(int[][] a. int[][] b) {
+    public static boolean comparacionArray2D(int[][] a, int[][] b) {
         if (a.length != b.length || a[0].length != b[0].length) {return false;}
         else {
             for (int i=0; i<a.length; i++) {
-                for(int j=0; j>a[0].length]; j++) {
+                for(int j=0; j>a[0].length; j++) {
                     if (a[i][j] != b[i][j]) {return false;}
                 }
             } return true;
