@@ -17,6 +17,7 @@ public class funcionesArrays4 {
         printINT.imprimirArrayINT2D(productoEscalar(9, a));
         System.out.println();
         printINT.imprimirArrayINT2D(productoEscalar(9, b));
+        printINT.imprimirArrayINT2D(matrizIdentidad(9));
     }
     public static int[][] sumaArrays2D(int[][] a, int[][] b) {
         int[][] array = new int[a.length][a[0].length];
@@ -44,5 +45,22 @@ public class funcionesArrays4 {
                 }
             } return true;
         }
+    }
+    public static void printPos (int[][] array, int a, int b) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[0].length; j++) {
+                if (array[i][j] >= a && array[i][j] <= b) {
+                    System.out.printf("[%d][%d]: %d.%n", i, j, array[i][j]);
+                }
+            }
+        }
+    }
+    public static int[][] matrizIdentidad(int n) {
+        System.out.println("MATRIZ IDENTIDAD:");
+        int[][] array = new int[n][n];
+        for(int i=0; i<array.length; i++) {
+           array[i][i] = 1;
+        }
+        return array;
     }
 }
